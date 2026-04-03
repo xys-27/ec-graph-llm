@@ -48,21 +48,24 @@
 
 ec_graph/
 ├── src/
-│ ├── configuration/ # 配置文件
-│ ├── datasync/ # 数据同步模块
-│ ├── ner/ # NER 模型与训练代码
-│ ├── web/ # Web服务（FastAPI）
-│ │ ├── app.py
-│ │ ├── service.py # 核心问答逻辑
-│ │ ├── schemas.py
-│ │ └── static/ # 前端页面
+│   ├── configuration/        # 配置文件
+│   ├── datasync/             # MySQL → Neo4j 数据同步
+│   ├── ner/                  # NER 模型训练与预测
+│   ├── service.py            # 核心问答逻辑（ChatService）
+│   ├── schemas.py            # 请求/响应数据结构
+│   └── app.py                # FastAPI 应用入口
 │
-├── data/ # 数据（未上传）
-├── checkpoints/ # 模型（未上传）
-├── logs/ # 日志
-├── main.py
-├── .gitignore
-└── README.md
+├── web/                      # Web 服务
+│   └── static/               # 前端页面
+│
+├── data/                     # 数据（未上传）
+├── checkpoints/              # 模型（未上传）
+├── logs/                     # 日志
+│
+├── main.py                   # 项目入口
+├── README.md
+└── .gitignore
+
 
 
 ---
