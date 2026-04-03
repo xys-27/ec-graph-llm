@@ -44,8 +44,9 @@
 
 ---
 
-## 🏗️ 项目结构
+## 📁 项目结构
 
+```text
 ec_graph/
 ├── src/
 │   ├── configuration/        # 配置文件
@@ -65,10 +66,8 @@ ec_graph/
 ├── main.py                   # 项目入口
 ├── README.md
 └── .gitignore
+```
 
-
-
----
 
 ## 🔄 系统流程
 
